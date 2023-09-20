@@ -17,7 +17,7 @@ import {
   rectSortingStrategy,
 } from "@dnd-kit/sortable";
 
-import SortableUser from "./SortableUser";
+import SortableUser from "./SortableCard";
 import Loading from "./Loading";
 
 const HomePage = () => {

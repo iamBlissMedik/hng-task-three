@@ -10,7 +10,7 @@ const SortableUser = ({ image }) => {
     transform: CSS.Transform.toString(transform),
   };
   return (
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+    <div className="px-6" ref={setNodeRef} style={style} {...attributes} {...listeners}>
       <ImageCard image={image} />
     </div>
   );

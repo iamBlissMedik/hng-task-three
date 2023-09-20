@@ -4,7 +4,7 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(",");
 
   return (
-    <div className="max-w-sm h-[500px] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto flex flex-col ">
+    <div className="max-w-sm pb-4 sm:h-[500px] border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto flex flex-col ">
       <div className=" ">
         <img
           src={image.webformatURL}
