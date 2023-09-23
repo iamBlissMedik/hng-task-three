@@ -9,7 +9,7 @@ const ImageCard = ({ image }) => {
         <img
           src={image.webformatURL}
           alt=""
-          className="rounded-t-lg object-cover h-48 w-96 "
+          className="rounded-t-lg object-cover h-48 w-96 touch-none "
         />
       </div>
       <div className="px-6  text-center flex flex-col justify-center items-center  h-full">
