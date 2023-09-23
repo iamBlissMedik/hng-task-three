@@ -7,6 +7,7 @@ const ImageSearch = ({ searchText }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     searchText(text);
+    setText("");
   };
   return (
     <div className="max-w-sm px-6 rounded overflow-hidden my-10 mx-auto">
@@ -16,6 +17,7 @@ const ImageSearch = ({ searchText }) => {
             onChange={(e) => setText(e.target.value)}
             className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
             type="text"
+            value={text}
             placeholder="Search Image Term..."
           />
           <button

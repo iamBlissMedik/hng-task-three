@@ -46,7 +46,6 @@ const HomePage = () => {
   const searchImage = (text) => {
     setLoading(true);
     setTerm(text);
-    console.log(text);
   };
   useEffect(() => {
     const getImages = async () => {
@@ -55,7 +54,7 @@ const HomePage = () => {
           import.meta.env.VITE_PIXABAY_API_KEY
         }&q=${term}&image_type=photo`
       );
-      const data = res.data;
+      const data = await res.data;
       setImages(data.hits);
       setLoading(false);
     };
