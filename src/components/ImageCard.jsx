@@ -4,12 +4,12 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(",");
 
   return (
-    <div className="max-w-sm pb-4 sm:h-[500px] touch-none border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto flex flex-col ">
+    <div className="max-w-sm pb-4 sm:h-[500px]  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto flex flex-col ">
       <div className=" ">
         <img
           src={image.webformatURL}
           alt=""
-          className="rounded-t-lg object-cover h-48 w-96  "
+          className="rounded-t-lg object-cover pointer-events-none h-48 w-96  "
         />
       </div>
       <div className="px-6  text-center flex flex-col justify-center items-center  h-full">
